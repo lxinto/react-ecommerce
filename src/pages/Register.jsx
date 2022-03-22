@@ -7,14 +7,24 @@ const Container = styled.div`
         rgba(255,255,255,0.5),
         rgba(255,255,255,0.5),
     ) url(https://images.ctfassets.net/v3n26e09qg2r/6GOP4c05cZftdLZcpjyT4/b9abc2641e0f9b502500605255d6a7ba/Better_sleep_-_Meta.png) center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+    padding: 20px;
+    width: 40%;
+    background-color: white;
+
+`
+const Title = styled.h1`
+    font-size: 24px;
+    font-weight: 30;
+    
+`
 
 const Form = styled.form``
-
-const Title = styled.h1``
 
 const Input = styled.input``
 
