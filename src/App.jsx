@@ -6,7 +6,7 @@ import Register from "./pages/Register.jsx"
 import Login from "./pages/Login.jsx";
 
 const App = () => {
-  return <Register />
+  return <Cart />
 };
 
 export default App;

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mobile } from "../responsive"
 
 const Container = styled.div`
     height: 30px;
@@ -7,6 +8,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    ${mobile({ width: "100%" })}
 `
 
 const Announcement = () => {
