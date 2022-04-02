@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Pinterest, Twitter, MailOutline, Phone, Room, } from "@material-ui/icons"
 import styled from "styled-components"
 import { mobile } from "../responsive"
+import { Link } from "react-router-dom"
 
 const Container = styled.div`
     display: flex;
@@ -74,6 +75,10 @@ const Payment = styled.img`
     width: 50%;
 
 `
+const linkStyle = {
+    textDecoration: "none",
+    color: 'black'
+  };
 
 const Footer = () => {
   return (
@@ -101,11 +106,11 @@ const Footer = () => {
         <Center>
             <Title>Useful Links</Title>
             <List>
-                <ListItem>Home</ListItem>
-                <ListItem>Cart</ListItem>
-                <ListItem>Products</ListItem>
-                <ListItem>About us</ListItem>
-                <ListItem>My Account</ListItem>
+                <ListItem><Link to="/" style={linkStyle}>Home</Link></ListItem>
+                <ListItem><Link to="/cart" style={linkStyle}>Cart</Link></ListItem>
+                <ListItem><Link to="/productlist" style={linkStyle}>Products</Link></ListItem>
+                <ListItem><Link to="/" style={linkStyle}>About us</Link></ListItem>
+                <ListItem><Link to="/login" style={linkStyle}>My Account</Link></ListItem>
             </List>
         </Center>
         <Right>

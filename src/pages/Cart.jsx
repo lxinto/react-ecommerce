@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Footer from "../components/Footer"
 import { Add, Remove } from "@material-ui/icons"
 import { mobile } from "../responsive"
+import { Link } from "react-router-dom"
 
 const Container = styled.div`
     padding: 20px;
@@ -159,7 +160,10 @@ const Button = styled.button`
     color: white;
     font-weight: 600;
 `
-
+const linkStyle = {    
+    textDecoration: "none",
+    color: 'black'
+  };
 
 const Cart = () => {
   return (
@@ -168,7 +172,9 @@ const Cart = () => {
         <Wrapper>
             <Title>Your Bag</Title>
             <Top>
+                <Link to={"/"} style={linkStyle} >
                 <TopButton>Continue Shopping</TopButton>
+                </Link>
                 <TopTexts>
                     <TopText>Shopping Bag (2)</TopText>
                     <TopText>Wishlist</TopText>

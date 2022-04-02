@@ -63,7 +63,7 @@ const Login = () => {
   return (
     <Container>
         <Wrapper>
-            <Title>Create an Account</Title>
+            <Title>Log in</Title>
             <Form>
                 <Input placeholder="Username"/>
                 <Input placeholder="Password"/>

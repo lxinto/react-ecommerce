@@ -3,6 +3,8 @@ import styled from "styled-components"
 import { useState } from "react";
 import { sliderItems } from "../data.js";
 import { mobile } from "../responsive"
+import { Link } from "react-router-dom"
+
 
 const Container = styled.div`
     width: 100%;
@@ -39,6 +41,7 @@ const Wrapper = styled.div`
 `
 
 const Slide = styled.div`
+    //margin-top: 50px;
     display: flex;
     align-items: center;
     width: 100vw;
@@ -71,7 +74,11 @@ const Button = styled.button`
     background-color: transparent;
     cursor: pointer;
 `
+const linkStyle = {
 
+    textDecoration: "none",
+    color: 'black'
+  };
 
 
 const Slider = () => {
@@ -94,12 +101,16 @@ const Slider = () => {
             {sliderItems.map((item) =>(
                 <Slide key={item.id}>
                     <ImgContainer>
+                    <Link to={`/productlist`}>
                         <Image src={item.img} />
+                    </Link>
                     </ImgContainer>
                     <InfoContainer>
+                    <Link to={`/productlist`} style={linkStyle}>
                         <Title>{item.title}</Title>
                         <Desc>{item.desc}</Desc>
                         <Button>SHOP NOW</Button>
+                    </Link>
                     </InfoContainer>
                 </Slide>   
             ))}

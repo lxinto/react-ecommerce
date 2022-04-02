@@ -27,16 +27,19 @@ export const sliderItems = [
       id: 1,
       img: "/images/category1.jpg",
       title: "Scented Candles",
+      category: "Scented Candles",
     },
     {
       id: 2,
       img: "/images/category2.jpg",
       title: "Decorative Candles",
+      category: "Decorative Candles"
     },
     {
       id: 3,
       img: "/images/category3.jpg",
       title: "Festive Candles",
+      category: "Festive Candles"
     },
   ];
 
